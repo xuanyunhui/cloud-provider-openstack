@@ -743,7 +743,7 @@ func (os *OpenStack) Routes() (cloudprovider.Routes, bool) {
 	if err != nil {
 		return nil, false
 	}
-
+/*
 	netExts, err := networkExtensions(network)
 	if err != nil {
 		glog.Warningf("Failed to list neutron extensions: %v", err)
@@ -754,7 +754,7 @@ func (os *OpenStack) Routes() (cloudprovider.Routes, bool) {
 		glog.V(3).Info("Neutron extraroute extension not found, required for Routes support")
 		return nil, false
 	}
-
+*/
 	compute, err := os.NewComputeV2()
 	if err != nil {
 		return nil, false
